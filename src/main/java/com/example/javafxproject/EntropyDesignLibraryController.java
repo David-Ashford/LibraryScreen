@@ -9,6 +9,7 @@ import javafx.scene.layout.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -74,7 +75,6 @@ public class EntropyDesignLibraryController {
 
     //Initialization function - loads in the images, authors names, book titles and progress bar values to the FXML file
     public void initialize() throws FileNotFoundException {
-
         loadImages();
         scanBookTitles();
         scanBookAuthors();
@@ -84,29 +84,30 @@ public class EntropyDesignLibraryController {
 
     //This method loads in 6 images that are stored in the project to be shown in each individual imageview
     // to represent the cover of the book
-    public void loadImages() throws FileNotFoundException {
+    public void loadImages() throws FileNotFoundException{
 
-        File fileOne = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/Holes.jpg");
+        File fileOne = null;
+        fileOne = new File("./resources/Holes.jpg");
         Image imageOne = new Image(fileOne.toURI().toString());
         bookOneImage.setImage(imageOne);
 
-        File fileTwo = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/HP_PS.jpg");
+        File fileTwo = new File("./resources/HP_PS.jpg");
         Image imageTwo = new Image(fileTwo.toURI().toString());
         bookTwoImage.setImage(imageTwo);
 
-        File fileThree = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/CharlieandtheChocolateFactory.jpg");
+        File fileThree = new File("./resources/CharlieandtheChocolateFactory.jpg");
         Image imageThree = new Image(fileThree.toURI().toString());
         bookThreeImage.setImage(imageThree);
 
-        File fileFour = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/LionWitchWardrobe.jpg");
+        File fileFour = new File("./resources/LionWitchWardrobe.jpg");
         Image imageFour = new Image(fileFour.toURI().toString());
         bookFourImage.setImage(imageFour);
 
-        File fileFive = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/Hobbit.jpg");
+        File fileFive = new File("./resources/Hobbit.jpg");
         Image imageFive = new Image(fileFive.toURI().toString());
         bookFiveImage.setImage(imageFive);
 
-        File fileSix = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/CW.jpg");
+        File fileSix = new File("./resources/CW.jpg");
         Image imageSix = new Image(fileSix.toURI().toString());
         bookSixImage.setImage(imageSix);
 
@@ -115,7 +116,7 @@ public class EntropyDesignLibraryController {
     //This method scans in the title of each book and adds it to the book buttons
     public void scanBookTitles() throws FileNotFoundException {
 
-        File text = new File("/Users/davidashford/IdeaProjects/JavaFXProject/src/main/resources/ChildrenBooks.txt");
+        File text = new File("./resources/ChildrenBooks.txt");
         Scanner scnr = new Scanner(text);
 
         for(int i = 0; i<MAX_NUM_BOOKS; i++) {
@@ -137,8 +138,8 @@ public class EntropyDesignLibraryController {
 
     //This method scans the text folder called "ChildrenBooksAuthors.txt" and assigns them to the string array, which
     //is connected to the FXML file
-    public void scanBookAuthors() throws FileNotFoundException {
-        File text = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/ChildrenBooksAuthors.txt");
+    public void scanBookAuthors() throws FileNotFoundException{
+        File text = new File("./resources/ChildrenBooksAuthors.txt");
         Scanner scnr = new Scanner(text);
 
         for(int i = 0; i<MAX_NUM_BOOKS; i++) {
@@ -159,7 +160,7 @@ public class EntropyDesignLibraryController {
     //Loads in the completion status of all books from a text file
     public void scanProgressBarCompletion() throws FileNotFoundException {
 
-        File text = new File("/Users/davidashford/IdeaProjects/JavaFxProject/src/main/resources/ProgressValues.txt");
+        File text = new File("./resources/ProgressValues.txt");
         Scanner scnr = new Scanner(text);
 
         for(int i = 0; i<MAX_NUM_BOOKS; i++) {
