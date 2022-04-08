@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="765.0" prefWidth="862.0" style="-fx-background-color: GREEN;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.EntropyDesignLibraryController">
+  <content>
+    <AnchorPane fx:id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="748.0" prefWidth="821.0">
+         <children>
+            <Button fx:id="searchButton" layoutX="537.0" layoutY="74.0" mnemonicParsing="false" onAction="#search" prefHeight="27.0" prefWidth="57.0" text="Search">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="14.0" />
+               </font></Button>
+            <Button layoutX="657.0" layoutY="74.0" mnemonicParsing="false" text="Add Book">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <ImageView fx:id="bookOneImage" fitHeight="150.0" fitWidth="200.0" layoutX="73.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="bookTwoImage" fitHeight="150.0" fitWidth="200.0" layoutX="328.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="bookThreeImage" fitHeight="150.0" fitWidth="200.0" layoutX="612.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="bookThree" layoutX="542.0" layoutY="382.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="268.0" text="Book Three">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <Button fx:id="bookTwo" layoutX="227.0" layoutY="382.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="299.0" text="Book Two">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <Button fx:id="bookOne" layoutX="19.0" layoutY="382.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="191.0" text="Book One">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <Label fx:id="bookOneAuthorLabel" layoutX="20.0" layoutY="408.0" prefHeight="17.0" prefWidth="190.0" text="Book Author One">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Label>
+            <Label fx:id="progressBarOneLabel" layoutX="67.0" layoutY="373.0" prefHeight="17.0" prefWidth="0.0" visible="false" />
+            <Label fx:id="bookTwoAuthorLabel" layoutX="229.0" layoutY="408.0" prefHeight="17.0" prefWidth="295.0" text="Book Author Two">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Label>
+            <Label fx:id="bookThreeAuthorLabel" layoutX="542.0" layoutY="408.0" prefHeight="17.0" prefWidth="268.0" text="Book Author Three">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Label>
+            <Label fx:id="progressBarTwoLabel" layoutX="231.0" layoutY="373.0" prefHeight="17.0" prefWidth="0.0" visible="false" />
+            <Label fx:id="progressBarThreeLabel" layoutX="535.0" layoutY="373.0" prefHeight="17.0" prefWidth="0.0" visible="false" />
+            <ImageView fx:id="bookFourImage" fitHeight="150.0" fitWidth="200.0" layoutX="98.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="bookFiveImage" fitHeight="150.0" fitWidth="200.0" layoutX="365.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="bookSixImage" fitHeight="150.0" fitWidth="200.0" layoutX="608.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="bookSix" layoutX="537.0" layoutY="682.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="239.0" text="Book Six">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <Button fx:id="bookFive" layoutX="288.0" layoutY="682.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Book Five">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <Button fx:id="bookFour" layoutX="13.0" layoutY="682.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="269.0" text="Book Four">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <Label fx:id="bookFourAuthorLabel" layoutX="14.0" layoutY="708.0" prefHeight="17.0" prefWidth="268.0" text="Book Author Four">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Label>
+            <Label fx:id="bookFiveAuthorLabel" layoutX="290.0" layoutY="708.0" prefHeight="17.0" prefWidth="241.0" text="Book Author Five">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Label>
+            <Label fx:id="bookSixAuthorLabel" layoutX="540.0" layoutY="708.0" prefHeight="17.0" prefWidth="255.0" text="Book Author Six">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Label>
+            <Label fx:id="progressBarFourLabel" layoutX="14.0" layoutY="965.0" prefHeight="17.0" prefWidth="0.0" visible="false" />
+            <Label fx:id="progressBarFiveLabel" layoutX="289.0" layoutY="965.0" prefHeight="17.0" prefWidth="0.0" visible="false" />
+            <Label fx:id="progressBarSixLabel" layoutX="537.0" layoutY="965.0" prefHeight="17.0" prefWidth="0.0" visible="false" />
+            <MenuButton layoutX="85.0" layoutY="74.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="11.0" visible="false">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+            </MenuButton>
+            <TextField fx:id="searchBar" layoutX="365.0" layoutY="74.0" />
+            <ProgressBar fx:id="progressBar4" layoutX="15.0" layoutY="725.0" prefHeight="20.0" prefWidth="267.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar5" layoutX="288.0" layoutY="725.0" prefHeight="20.0" prefWidth="245.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar6" layoutX="537.0" layoutY="725.0" prefHeight="20.0" prefWidth="239.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar1" layoutX="21.0" layoutY="423.0" prefHeight="20.0" prefWidth="189.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar2" layoutX="228.0" layoutY="423.0" prefHeight="20.0" prefWidth="297.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar3" layoutX="540.0" layoutY="423.0" prefHeight="20.0" prefWidth="272.0" progress="0.0" />
+            <ListView fx:id="listView" layoutX="365.0" layoutY="103.0" prefHeight="78.0" prefWidth="230.0" />
+            <Button layoutX="80.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" text="Library">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="211.0" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Sort">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
