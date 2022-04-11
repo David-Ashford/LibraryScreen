@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.Scanner;
 
@@ -17,7 +18,7 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("library.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/library.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 800, 1000);
         stage.setTitle("Entropy Designs Sample Library");
