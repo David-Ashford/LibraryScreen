@@ -8,13 +8,6 @@ import javafx.scene.layout.AnchorPane;
 
 public class EntropyLibraryController {
 
-    @FXML protected ProgressBar progressBar1;
-    @FXML protected ProgressBar progressBar2;
-    @FXML protected ProgressBar progressBar3;
-    @FXML protected ProgressBar progressBar4;
-    @FXML protected ProgressBar progressBar5;
-    @FXML protected ProgressBar progressBar6;
-
     @FXML protected ScrollPane scrollPane;
     @FXML protected AnchorPane anchorPane1;
 

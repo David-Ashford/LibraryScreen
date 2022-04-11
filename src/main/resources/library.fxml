@@ -27,12 +27,6 @@
                </font>
             </MenuButton>
             <TextField fx:id="searchBar" layoutX="365.0" layoutY="74.0" />
-            <ProgressBar fx:id="progressBar4" layoutX="15.0" layoutY="725.0" prefHeight="20.0" prefWidth="267.0" progress="0.0" />
-            <ProgressBar fx:id="progressBar5" layoutX="288.0" layoutY="725.0" prefHeight="20.0" prefWidth="245.0" progress="0.0" />
-            <ProgressBar fx:id="progressBar6" layoutX="537.0" layoutY="725.0" prefHeight="20.0" prefWidth="239.0" progress="0.0" />
-            <ProgressBar fx:id="progressBar1" layoutX="21.0" layoutY="423.0" prefHeight="20.0" prefWidth="189.0" progress="0.0" />
-            <ProgressBar fx:id="progressBar2" layoutX="228.0" layoutY="423.0" prefHeight="20.0" prefWidth="297.0" progress="0.0" />
-            <ProgressBar fx:id="progressBar3" layoutX="540.0" layoutY="423.0" prefHeight="20.0" prefWidth="272.0" progress="0.0" />
             <ListView fx:id="listView" layoutX="365.0" layoutY="103.0" prefHeight="78.0" prefWidth="230.0" />
             <Button layoutX="80.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" text="Library">
                <font>
