@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="765.0" prefWidth="862.0" style="-fx-background-color: GREEN;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.EntropyLibraryController">
+  <content>
+    <AnchorPane fx:id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="748.0" prefWidth="821.0">
+         <children>
+            <Button fx:id="searchButton" layoutX="537.0" layoutY="74.0" mnemonicParsing="false" onAction="#search" prefHeight="27.0" prefWidth="57.0" text="Search">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="14.0" />
+               </font></Button>
+            <Button layoutX="657.0" layoutY="74.0" mnemonicParsing="false" text="Add Book">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font></Button>
+            <MenuButton layoutX="85.0" layoutY="74.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="11.0" visible="false">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+            </MenuButton>
+            <TextField fx:id="searchBar" layoutX="365.0" layoutY="74.0" />
+            <ProgressBar fx:id="progressBar4" layoutX="15.0" layoutY="725.0" prefHeight="20.0" prefWidth="267.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar5" layoutX="288.0" layoutY="725.0" prefHeight="20.0" prefWidth="245.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar6" layoutX="537.0" layoutY="725.0" prefHeight="20.0" prefWidth="239.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar1" layoutX="21.0" layoutY="423.0" prefHeight="20.0" prefWidth="189.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar2" layoutX="228.0" layoutY="423.0" prefHeight="20.0" prefWidth="297.0" progress="0.0" />
+            <ProgressBar fx:id="progressBar3" layoutX="540.0" layoutY="423.0" prefHeight="20.0" prefWidth="272.0" progress="0.0" />
+            <ListView fx:id="listView" layoutX="365.0" layoutY="103.0" prefHeight="78.0" prefWidth="230.0" />
+            <Button layoutX="80.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" text="Library">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="211.0" layoutY="77.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Sort">
+               <font>
+                  <Font name="Bodoni 72 Oldstyle Book" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
