@@ -18,7 +18,7 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/library.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("com.example.javafxproject/EDLibrary.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 800, 1000);
         stage.setTitle("Entropy Designs Sample Library");

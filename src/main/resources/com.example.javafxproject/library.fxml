@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="765.0" prefWidth="862.0" style="-fx-background-color: GREEN;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.EntropyLibraryController">
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="765.0" prefWidth="778.0" style="-fx-background-color: GREEN;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.EntropyLibraryController">
   <content>
-    <AnchorPane fx:id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="748.0" prefWidth="821.0">
+    <AnchorPane fx:id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="748.0" prefWidth="799.0">
          <children>
             <Button fx:id="searchButton" layoutX="537.0" layoutY="74.0" mnemonicParsing="false" onAction="#search" prefHeight="27.0" prefWidth="57.0" text="Search">
                <font>
@@ -27,7 +31,7 @@
                </font>
             </MenuButton>
             <TextField fx:id="searchBar" layoutX="365.0" layoutY="74.0" />
-            <ListView fx:id="listView" layoutX="365.0" layoutY="103.0" prefHeight="78.0" prefWidth="230.0" />
+            <ListView fx:id="listView" layoutX="80.0" layoutY="123.0" prefHeight="549.0" prefWidth="654.0" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="123.0" />
             <Button layoutX="80.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" text="Library">
                <font>
                   <Font name="Bodoni 72 Oldstyle Book" size="13.0" />

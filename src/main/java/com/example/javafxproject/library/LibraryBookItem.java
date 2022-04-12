@@ -4,6 +4,7 @@ import javafx.scene.Group;
 import javafx.scene.SubScene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import java.io.File;
 
@@ -15,9 +16,11 @@ public class LibraryBookItem {
     private String bookName;
     private String bookAuthor;
     private int numOfPages;
+    private Group bookItemGroup;
 
     public LibraryBookItem(){
-        bookItem = new SubScene(bookItem.getParent(), 550, 75);
+        this.bookItemGroup = new Group();
+        bookItem = new SubScene(this.bookItemGroup, 75, 100);
     }
 
     public void loadBookThumbnail(){
@@ -30,5 +33,11 @@ public class LibraryBookItem {
         this.bookAuthor = author;
         this.imagePath = path;
         this.numOfPages = pages;
+    }
+
+    public SubScene loadItem(){
+        loadBookThumbnail();
+        bookItemGroup.getChildren().add(new ImageView(this.image));
+        return this.bookItem;
     }
 }
